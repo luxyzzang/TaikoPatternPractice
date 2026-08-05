@@ -8,6 +8,15 @@
 
 <h2>Update Patch Note</h2>
 
+<h4>Ver 0.4 (2026/08/05)</h4>
+
+<small>
+<ul>
+<li>인게임 UI 그래픽 대폭 변경</li>
+<li>진행 시간 확인 기능 추가</li>
+</ul>
+</small>
+
 <h4>Ver 0.3 (2026/08/02)</h4>
 
 <small>
