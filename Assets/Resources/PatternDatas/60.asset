@@ -1,0 +1,811 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fcaec1fd72e24e479a9d9eb5f115e37, type: 3}
+  m_Name: 60
+  m_EditorClassIdentifier: Assembly-CSharp::PatternData
+  patternList:
+    m_PLID: b206330a-c18d-4f0c-9c20-67519c743467
+    m_ProbabilityItems: []
+    m_PreventRepeat: 0
+    m_ShuffleIterations: 1
+    m_PickCountMin: 1
+    m_PickCountMax: 1
+    m_LinkPickCounts: 1
+    m_MaintainPickCountIfDisabled: 0
+    m_PickCountCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_Seed: 0
+    m_KeepSeed: 0
+    m_PickHistory:
+      m_History: []
+      m_Capacity: 1000
+    m_LastPickCount: 0
+    m_SelectionMethodID: LSMRegular
+    m_ListName: 
+    m_DepletableList: 0
+    m_WeightsPriority: 0
+    m_BaseWeight: 100
+  beatsPerMeasure: 24
+  maxCombo: 100
+  isDetarame: 0
+  usedStreamPattern: 1
+  lowestCount: 7
+  highestCount: 9
+  streamUnits:
+    m_PLID: 118d0576-0d07-44f5-8da2-942d9b90dd20
+    m_ProbabilityItems:
+    - m_Value: 11
+      m_BaseProbability: 0.15000002
+      m_Enabled: 1
+      m_Locked: 0
+      m_InfluenceSpread: {x: 0, y: 1}
+      m_InfluenceProvider: {fileID: 0}
+      m_InvertInfluence: 0
+      m_DepletableItem: 1
+      m_Units: 1
+      m_MaxUnits: 1
+      m_Weight: 120
+    - m_Value: 22
+      m_BaseProbability: 0.15
+      m_Enabled: 1
+      m_Locked: 0
+      m_InfluenceSpread: {x: 0, y: 1}
+      m_InfluenceProvider: {fileID: 0}
+      m_InvertInfluence: 0
+      m_DepletableItem: 1
+      m_Units: 1
+      m_MaxUnits: 1
+      m_Weight: 120
+    - m_Value: 1111
+      m_BaseProbability: 0.2
+      m_Enabled: 1
+      m_Locked: 0
+      m_InfluenceSpread: {x: 0, y: 1}
+      m_InfluenceProvider: {fileID: 0}
+      m_InvertInfluence: 0
+      m_DepletableItem: 1
+      m_Units: 1
+      m_MaxUnits: 1
+      m_Weight: 159
+    - m_Value: 2222
+      m_BaseProbability: 0.2
+      m_Enabled: 1
+      m_Locked: 0
+      m_InfluenceSpread: {x: 0, y: 1}
+      m_InfluenceProvider: {fileID: 0}
+      m_InvertInfluence: 0
+      m_DepletableItem: 1
+      m_Units: 1
+      m_MaxUnits: 1
+      m_Weight: 160
+    - m_Value: 1112
+      m_BaseProbability: 0.07500001
+      m_Enabled: 1
+      m_Locked: 0
+      m_InfluenceSpread: {x: 0, y: 1}
+      m_InfluenceProvider: {fileID: 0}
+      m_InvertInfluence: 0
+      m_DepletableItem: 1
+      m_Units: 1
+      m_MaxUnits: 1
+      m_Weight: 60
+    - m_Value: 2221
+      m_BaseProbability: 0.075
+      m_Enabled: 1
+      m_Locked: 0
+      m_InfluenceSpread: {x: 0, y: 1}
+      m_InfluenceProvider: {fileID: 0}
+      m_InvertInfluence: 0
+      m_DepletableItem: 1
+      m_Units: 1
+      m_MaxUnits: 1
+      m_Weight: 60
+    - m_Value: 1222
+      m_BaseProbability: 0.07500001
+      m_Enabled: 1
+      m_Locked: 0
+      m_InfluenceSpread: {x: 0, y: 1}
+      m_InfluenceProvider: {fileID: 0}
+      m_InvertInfluence: 0
+      m_DepletableItem: 1
+      m_Units: 1
+      m_MaxUnits: 1
+      m_Weight: 60
+    - m_Value: 2111
+      m_BaseProbability: 0.075
+      m_Enabled: 1
+      m_Locked: 0
+      m_InfluenceSpread: {x: 0, y: 1}
+      m_InfluenceProvider: {fileID: 0}
+      m_InvertInfluence: 0
+      m_DepletableItem: 1
+      m_Units: 1
+      m_MaxUnits: 1
+      m_Weight: 60
+    m_PreventRepeat: 0
+    m_ShuffleIterations: 1
+    m_PickCountMin: 1
+    m_PickCountMax: 1
+    m_LinkPickCounts: 1
+    m_MaintainPickCountIfDisabled: 0
+    m_PickCountCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_Seed: 552678659
+    m_KeepSeed: 0
+    m_PickHistory:
+      m_History:
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017748784630
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201017748774632
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201017343421556
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016948724175
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016716366778
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016479831048
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 7
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 6
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 5
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 2
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 1
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 3
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 0
+        m_Time:
+          Ticks: 639201016265821707
+      - m_Index: 4
+        m_Time:
+          Ticks: 639201016265811654
+      m_Capacity: 1000
+    m_LastPickCount: 1
+    m_SelectionMethodID: LSMRegular
+    m_ListName: 
+    m_DepletableList: 0
+    m_WeightsPriority: 0
+    m_BaseWeight: 100

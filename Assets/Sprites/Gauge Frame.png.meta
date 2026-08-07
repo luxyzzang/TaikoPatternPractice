@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: 01304d5e303183c418e65d70db7eb2a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4992150057533761927
+    second: 1P_Base_0
+  - first:
+      213: 2524689713924846211
+    second: 1P_Base_1
+  - first:
+      213: 1043912617148332460
+    second: 1P_Base_2
+  - first:
+      213: -9057011382988192421
+    second: 1P_Base_3
+  - first:
+      213: -7252988189502102660
+    second: 1P_Base_4
+  - first:
+      213: -3384629896814821897
+    second: 1P_Base_5
+  - first:
+      213: -656515530757096875
+    second: 1P_Base_6
+  - first:
+      213: 2331627136994449158
+    second: 1P_Base_7
+  - first:
+      213: 357526048121004383
+    second: 1P_Base_8
+  - first:
+      213: 6330138550044273129
+    second: 1P_Base_9
+  - first:
+      213: -7054577092803458577
+    second: 1P_Base_10
+  - first:
+      213: -7142634940818673478
+    second: 1P_Base_11
+  - first:
+      213: -3511204371740859026
+    second: 1P_Base_12
+  - first:
+      213: 1134064599101354775
+    second: 1P_Base_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gauge Frame_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 23
+        width: 686
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3a8a78eaf7e7544affd84e149ede64
+      internalID: 519851502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gauge Frame_55
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b60023499b8264c94d8e3a485921f2
+      internalID: 1897876993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gauge Frame_56
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c605d5b825fffb04c97eb9799c8c6c38
+      internalID: 380201355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Gauge Frame_0: 519851502
+      Gauge Frame_1: 958968273
+      Gauge Frame_10: -600324256
+      Gauge Frame_11: -74131065
+      Gauge Frame_12: -802161867
+      Gauge Frame_13: 679187654
+      Gauge Frame_14: 593417590
+      Gauge Frame_15: -2064157005
+      Gauge Frame_16: -274085837
+      Gauge Frame_17: -565831127
+      Gauge Frame_18: -973068187
+      Gauge Frame_19: 2052131253
+      Gauge Frame_2: 1537753457
+      Gauge Frame_20: 850932918
+      Gauge Frame_21: 1505438913
+      Gauge Frame_22: -99074606
+      Gauge Frame_23: 968975390
+      Gauge Frame_24: 632191718
+      Gauge Frame_25: -750879503
+      Gauge Frame_26: -1077481633
+      Gauge Frame_27: 215344116
+      Gauge Frame_28: 1208610218
+      Gauge Frame_29: -592964133
+      Gauge Frame_3: -1733616090
+      Gauge Frame_30: -729530292
+      Gauge Frame_31: -518604355
+      Gauge Frame_32: -1564418562
+      Gauge Frame_33: -1206501930
+      Gauge Frame_34: -7538803
+      Gauge Frame_35: -535017645
+      Gauge Frame_36: -426204469
+      Gauge Frame_37: 1839590830
+      Gauge Frame_38: -1837486280
+      Gauge Frame_39: 1611393162
+      Gauge Frame_4: -138995560
+      Gauge Frame_40: -1792805983
+      Gauge Frame_41: -1211009811
+      Gauge Frame_42: 513958084
+      Gauge Frame_43: -33952045
+      Gauge Frame_44: 1082208244
+      Gauge Frame_45: -182650269
+      Gauge Frame_46: -412008780
+      Gauge Frame_47: 626846005
+      Gauge Frame_48: 871183073
+      Gauge Frame_49: 1245456870
+      Gauge Frame_5: -613352189
+      Gauge Frame_50: 234158225
+      Gauge Frame_51: 449157950
+      Gauge Frame_52: -730753744
+      Gauge Frame_53: -1861552955
+      Gauge Frame_54: -1649176152
+      Gauge Frame_55: 1897876993
+      Gauge Frame_56: 380201355
+      Gauge Frame_6: 903434254
+      Gauge Frame_7: 267018336
+      Gauge Frame_8: -371420790
+      Gauge Frame_9: -1782834048
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
