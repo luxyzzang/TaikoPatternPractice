@@ -4,14 +4,14 @@
 태고 패턴 연습 전용 프로그램으로써 누구든지 이용가능합니다.
 </h3>
 
-[Download For PC Version](https://github.com/luxyzzang/TaikoPatternPractice/releases/download/Ver-0.5/TaikoPatternPractice_PC.zip)<br>
-[Download For Android Version](https://github.com/luxyzzang/TaikoPatternPractice/releases/download/Ver-0.5/TaikoPatternPractice_AOS.apk)
+[Download For PC Version](https://github.com/luxyzzang/TaikoPatternPractice/releases/download/Ver-0.5/PC.zip)<br>
+[Download For Android Version](https://github.com/luxyzzang/TaikoPatternPractice/releases/download/Ver-0.5/AOS.apk)
 
 -----
 
 <h2>Update Patch Note</h2>
 
-<h4>Ver 0.5 (2026/08/05)</h4>
+<h4>Ver 0.5 (2026/08/07)</h4>
 
 <small>
 <ul>
