@@ -59,6 +59,7 @@ public class PoolManager : MonoBehaviour
     {
         Note note = PrefabsList[idx].Dequeue();
         note.transform.position = spawnPoint.position;
+        note.transform.localScale = Vector3.one * GameManager.Instance.appliedNoteScale;
         note.gameObject.SetActive(true);
         
         return note;

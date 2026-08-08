@@ -7,8 +7,6 @@ public class InputMobile : MonoBehaviour
     private SoundManager sound;
     private UIGame uiGame;
 
-    private Vector2 lastClickPosition;
-
     private void Start()
     {
         game = GameManager.Instance;
@@ -16,19 +14,12 @@ public class InputMobile : MonoBehaviour
         uiGame = UIGame.Instance;
     }
 
-    public void SaveClickPosition(BaseEventData data)
+    public void PressDon(BaseEventData data)
     {
         PointerEventData eventData = data as PointerEventData;
-        if (eventData != null) { lastClickPosition = eventData.position; }
-    }
+        if (eventData == null) return;
 
-    public void PressDon() => Invoke(nameof(DelayedPressDon), 0.0001f);
-
-    public void PressKat() => Invoke(nameof(DelayedPressKat), 0.0001f);
-
-    private void DelayedPressDon()
-    {
-        if (lastClickPosition.x < Screen.width * 0.5f)
+        if (eventData.position.x < Screen.width * 0.5f)
         {
             uiGame.KeyPressed(uiGame.leftDon);
             sound.PlayDon();
@@ -42,9 +33,12 @@ public class InputMobile : MonoBehaviour
         }
     }
 
-    private void DelayedPressKat()
+    public void PressKat(BaseEventData data)
     {
-        if (lastClickPosition.x < Screen.width * 0.5f)
+        PointerEventData eventData = data as PointerEventData;
+        if (eventData == null) return;
+
+        if (eventData.position.x < Screen.width * 0.5f)
         {
             uiGame.KeyPressed(uiGame.leftKat);
             sound.PlayKat();

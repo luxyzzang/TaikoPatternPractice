@@ -25,9 +25,6 @@ public class UIGame : MonoBehaviour
     public Image timeMask;
     public Image clearGauge;
     public Text accuracyTxt;
-    public Text perfectCntTxt;
-    public Text goodCntTxt;
-    public Text missCntTxt;
     public Text comboTxt;
 
     public float fadeInTime = 0.05f;
@@ -84,9 +81,6 @@ public class UIGame : MonoBehaviour
         else { accurarcy = 0f; }
 
         accuracyTxt.text = accurarcy.ToString("F2") + "%";
-        perfectCntTxt.text = perfectCnt.ToString();
-        goodCntTxt.text = goodCnt.ToString();
-        missCntTxt.text = missCnt.ToString();
         comboTxt.text = comboCnt.ToString();
         comboTxt.enabled = comboCnt > 0;
         clearGauge.fillAmount = game.totalNoteCnt > 0 ? (float)(perfectCnt + goodCnt) / game.totalNoteCnt : 0f;

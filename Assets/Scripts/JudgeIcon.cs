@@ -15,10 +15,11 @@ public class JudgeIcon : MonoBehaviour
     public float fadeTime = 0.3f;
 
     [Header("Move")]
-    public Transform startPos;
+    public RectTransform startPos; // Transform 대신 RectTransform으로 변경
     public float moveHeight = 30f;
 
     private Coroutine effectCoroutine;
+    private Text activeText; // 현재 재생 중인 텍스트 추적용
 
     private void Awake()
     {
@@ -41,65 +42,78 @@ public class JudgeIcon : MonoBehaviour
         if (effectCoroutine != null)
         {
             StopCoroutine(effectCoroutine);
-            ResetText(text);
+            if (activeText != null)
+            {
+                ResetText(activeText);
+            }
         }
 
         perfect.gameObject.SetActive(false);
         good.gameObject.SetActive(false);
         miss.gameObject.SetActive(false);
 
+        activeText = text;
         effectCoroutine = StartCoroutine(EffectCoroutine(text));
     }
-
 
     private IEnumerator EffectCoroutine(Text text)
     {
         text.gameObject.SetActive(true);
 
         RectTransform rect = text.rectTransform;
-        Vector3 startPosition = startPos.localPosition;
-        rect.localPosition = startPosition;
+
+        // 1. Z축 왜곡 방지를 위해 anchoredPosition (2D Vector2) 사용
+        Vector2 startPosition = startPos.anchoredPosition;
+
+        // Z축 수치가 튀지 않도록 Z값을 0으로 강제 고정
+        rect.anchoredPosition3D = new Vector3(startPosition.x, startPosition.y, 0f);
 
         Color c = text.color;
         c.a = 1f;
         text.color = c;
 
-        Vector3 peakPosition = startPosition + Vector3.up * moveHeight;
+        Vector2 peakPosition = startPosition + Vector2.up * moveHeight;
         float t = 0f;
 
         // 위로 이동
-        while (t < fadeTime * 0.35f)
+        float upDuration = fadeTime * 0.35f;
+        while (t < upDuration)
         {
             t += Time.deltaTime;
-            float p = t / (fadeTime * 0.35f);
+            float p = t / upDuration;
             p = Mathf.Sin(p * Mathf.PI * 0.5f);
-            rect.localPosition = Vector3.Lerp(startPosition, peakPosition, p);
+
+            // 2D Vector2 Lerp 사용으로 Z축 안전 보장
+            rect.anchoredPosition = Vector2.Lerp(startPosition, peakPosition, p);
 
             yield return null;
         }
 
         t = 0f;
         // 내려오면서 페이드
-        while (t < fadeTime * 0.65f)
+        float downDuration = fadeTime * 0.65f;
+        while (t < downDuration)
         {
             t += Time.deltaTime;
-            float p = t / (fadeTime * 0.65f);
-            rect.localPosition = Vector3.Lerp(peakPosition, startPosition, p);
+            float p = t / downDuration;
+
+            rect.anchoredPosition = Vector2.Lerp(peakPosition, startPosition, p);
 
             c.a = 1f - p;
             text.color = c;
             yield return null;
         }
 
-
         ResetText(text);
         text.gameObject.SetActive(false);
         effectCoroutine = null;
+        activeText = null;
     }
 
     private void ResetText(Text text)
     {
-        text.rectTransform.localPosition = startPos.localPosition;
+        if (text == null) return;
+        text.rectTransform.anchoredPosition3D = new Vector3(startPos.anchoredPosition.x, startPos.anchoredPosition.y, 0f);
 
         Color c = text.color;
         c.a = 1f;

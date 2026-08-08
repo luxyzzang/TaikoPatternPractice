@@ -21,6 +21,20 @@ public class GameManager : MonoBehaviour
     private JudgeIcon judgeIcon;
     private JudgeEffect judgeEffect;
 
+    [Header("Resolution")]
+    private float targetWidth = 1920f;
+    private float targetHeight = 1080f;
+    private Vector3 baseCameraPosition = new Vector3(4.5f, -1f, -10f);
+    private float baseBarScaleY = 2.3f;
+    private float baseJudgeCircleScale = 0.8f;
+    private float baseNoteScale = 1f;
+    private Camera cam;
+    private int lastWidth;
+    private int lastHeight;
+    public float appliedBarScaleY;
+    public float appliedJudgeCircleScale;
+    public float appliedNoteScale;
+
     [Header("Options")]
     public int level;
     public float bpm = 120f;
@@ -31,6 +45,7 @@ public class GameManager : MonoBehaviour
     public bool onlyFullCombo = false;
     public bool onlyAllPerfect = false;
     public Transform spawnPos;
+    public GameObject judgeCircle;
     public GameObject barPrefab;
 
     private readonly float baseMoveTime = 360f; // ±âÁØ°ª
@@ -68,10 +83,13 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 120;
     }
 
     private void Start()
     {
+        cam = Camera.main;
         pool = PoolManager.Instance;
         sound = SoundManager.Instance;
         uiLobby = UILobby.Instance;
@@ -79,6 +97,7 @@ public class GameManager : MonoBehaviour
         uiResult = UIResult.Instance;
         judgeIcon = JudgeIcon.Instance;
         judgeEffect = JudgeEffect.Instance;
+        UpdateScaleAndPosition();
     }
 
     private void Update()
@@ -174,6 +193,7 @@ public class GameManager : MonoBehaviour
     {
         Bar bar = Instantiate(barPrefab, spawnPos).GetComponent<Bar>();
         bar.Init(data.hitTime, speed);
+        bar.transform.localScale = new Vector3(bar.transform.localScale.x, appliedBarScaleY, 0);
     }
 
 
@@ -281,4 +301,25 @@ public class GameManager : MonoBehaviour
     }
 
     private void PresentGameResult() => uiResult.gameObject.SetActive(true);
+
+    private void UpdateScaleAndPosition()
+    {
+        lastWidth = Screen.width;
+        lastHeight = Screen.height;
+
+        float targetAspect = targetWidth / targetHeight;
+        float currentAspect = (float)Screen.width / Screen.height;
+        float aspectScale = currentAspect / targetAspect;
+
+        Vector3 newPos = baseCameraPosition;
+        newPos.x = baseCameraPosition.x * aspectScale;
+        newPos.y = baseCameraPosition.y * aspectScale;
+
+        cam.transform.position = newPos;
+        appliedBarScaleY = baseBarScaleY * aspectScale;
+        appliedJudgeCircleScale = baseJudgeCircleScale * aspectScale;
+        appliedNoteScale = baseNoteScale * aspectScale;
+
+        judgeCircle.transform.localScale = Vector3.one * appliedJudgeCircleScale;
+    }
 }

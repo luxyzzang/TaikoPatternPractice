@@ -41,11 +41,12 @@ public class UIOption : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void OnEnable()
+    private void Start()
     {
         game = GameManager.Instance;
         sound = SoundManager.Instance;
         input = InputManager.Instance;
+
         BpmInputFieldValueChanged();
         NoteCountInputFieldValueChanged();
         ScrollInputFieldValueChanged();
@@ -53,11 +54,10 @@ public class UIOption : MonoBehaviour
 
         if (!Application.isMobilePlatform)
         {
-
             ApplyKeyText(leftDonText, input.pc.leftDon.ToString());
             ApplyKeyText(rightDonText, input.pc.rightDon.ToString());
             ApplyKeyText(leftKatText, input.pc.leftKat.ToString());
-            ApplyKeyText(rightKatText,input.pc.rightKat.ToString());
+            ApplyKeyText(rightKatText, input.pc.rightKat.ToString());
         }
     }
 
